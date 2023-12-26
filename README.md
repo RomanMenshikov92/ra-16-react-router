@@ -1,12 +1,12 @@
-# HOC — Hooks & Context API
+# React Router
 
-<!-- [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/nppt6q5h7w0xqv7y?svg=true)](https://ci.appveyor.com/project/RomanMenshikov92/ra-16-react-hooks-context-api)
+[![Appveyor Build status](https://ci.appveyor.com/api/projects/status/1ae450f6dyukhc6k?svg=true)](https://ci.appveyor.com/project/RomanMenshikov92/ra-16-react-router)
 
-[![Pages build status](https://github.com/RomanMenshikov92/ra-16-react-router/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/RomanMenshikov92/ra-16-react-router/actions/workflows/pages/pages-build-deployment) -->
+[![Pages build status](https://github.com/RomanMenshikov92/ra-16-react-router/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/RomanMenshikov92/ra-16-react-router/actions/workflows/pages/pages-build-deployment)
 
 ---
 
-<!-- ## [GutHub Pages](https://romanmenshikov92.github.io/ra-16-react-router/) -->
+## [GutHub Pages](https://romanmenshikov92.github.io/ra-16-react-router/)
 
 Необходимо выполнить и предоставить на проверку следующие задачи:
 
