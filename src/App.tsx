@@ -14,7 +14,7 @@ function App() {
     <>
       <AuthContext.Provider value={auth}>
         <Routes>
-          <Route path="/ra-16-react-router" element={<LayoutApp />}>
+          <Route path="/ra-16-react-router/" element={<LayoutApp />}>
             <Route index element={<Home />} />
             <Route path="/ra-16-react-router/menu/*" element={<SiteRacingTaxi />} />
             <Route path="/ra-16-react-router/crud/*" element={<CRUD />} />
