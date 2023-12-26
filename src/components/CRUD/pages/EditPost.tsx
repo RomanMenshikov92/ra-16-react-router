@@ -44,7 +44,7 @@ export const EditPost: React.FC = () => {
     })
       .then((response) => {
         if (response.ok) {
-          navigate(`/crud/posts/${id}`, {
+          navigate(`/ra-16-react-router/crud/posts/${id}`, {
             state: { post: updatedPost, created },
           });
         } else {
@@ -57,7 +57,7 @@ export const EditPost: React.FC = () => {
   };
 
   const handleCancel = () => {
-    navigate(`/crud/posts/${id}`, { state: { post, created } });
+    navigate(`/ra-16-react-router/crud/posts/${id}`, { state: { post, created } });
   };
 
   if (!post) {

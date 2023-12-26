@@ -39,7 +39,7 @@ export const NewsFeed: React.FC = () => {
             image={item.image}
             title={item.title}
             content={item.content}
-            onClick={(id: string) => navigate(`/auth/neto/news/${id}`)}
+            onClick={(id: string) => navigate(`/ra-16-react-router/auth/neto/news/${id}`)}
           />
         ))
       ) : (

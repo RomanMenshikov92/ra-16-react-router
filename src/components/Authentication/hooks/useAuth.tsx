@@ -36,14 +36,14 @@ export const useAuth = () => {
             Authorization: `Bearer ${token}`,
           },
         });
-        navigate("/auth/neto/news/");
+        navigate("/ra-16-react-router/auth/neto/news/");
         if (profileResponse.ok) {
           const user = await profileResponse.json();
           setToken(token);
           setUser(user);
           setStorageValue("token", token);
           setStorageValue("user", JSON.stringify(user));
-          navigate("/auth/neto/news/");
+          navigate("/ra-16-react-router/auth/neto/news/");
         } else if (profileResponse.status === 401) {
           logout();
         }
@@ -62,7 +62,7 @@ export const useAuth = () => {
     setUser(null);
     removeStorageValue("token");
     removeStorageValue("user");
-    navigate("/auth/neto/");
+    navigate("/ra-16-react-router/auth/neto/");
   };
 
   return { user, token, login, logout };

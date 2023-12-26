@@ -28,7 +28,7 @@ export const PostsList: React.FC = () => {
   };
 
   const handlePostClick = (postId: number, post: Post) => {
-    navigate(`/crud/posts/${postId}`, {
+    navigate(`/ra-16-react-router/crud/posts/${postId}`, {
       state: { post, created: post.created },
     });
   };
@@ -50,7 +50,7 @@ export const PostsList: React.FC = () => {
     <>
       <h2 className="crud__title">Список постов</h2>
       <div className="crud__wrapper-add">
-        <Link className="crud__link-add" to="/crud/posts/new">
+        <Link className="crud__link-add" to="/ra-16-react-router/crud/posts/new">
           Создать пост
         </Link>
       </div>

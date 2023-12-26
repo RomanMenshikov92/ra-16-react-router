@@ -14,11 +14,11 @@ function App() {
     <>
       <AuthContext.Provider value={auth}>
         <Routes>
-          <Route path="/" element={<LayoutApp />}>
+          <Route path="/ra-16-react-router" element={<LayoutApp />}>
             <Route index element={<Home />} />
-            <Route path="/menu/*" element={<SiteRacingTaxi />} />
-            <Route path="/crud/*" element={<CRUD />} />
-            <Route path="/auth/*" element={<AuthenticationPage />} />
+            <Route path="/ra-16-react-router/menu/*" element={<SiteRacingTaxi />} />
+            <Route path="/ra-16-react-router/crud/*" element={<CRUD />} />
+            <Route path="/ra-16-react-router/auth/*" element={<AuthenticationPage />} />
           </Route>
         </Routes>
       </AuthContext.Provider>

@@ -4,16 +4,16 @@ export const Menu: React.FC = () => {
   const activeLink = ({ isActive }: { isActive: boolean }) => (isActive ? "menu__item menu__item-active" : "menu__item");
   return (
     <nav className="menu">
-      <NavLink className={activeLink} to="/menu/home/">
+      <NavLink className={activeLink} to="/ra-16-react-router/menu/home/">
         Главная
       </NavLink>
-      <NavLink className={activeLink} to="/menu/drift">
+      <NavLink className={activeLink} to="/ra-16-react-router/menu/drift">
         Дрифт-такси
       </NavLink>
-      <NavLink className={activeLink} to="/menu/timeattack">
+      <NavLink className={activeLink} to="/ra-16-react-router/menu/timeattack">
         Time Attack
       </NavLink>
-      <NavLink className={activeLink} to="/menu/forza">
+      <NavLink className={activeLink} to="/ra-16-react-router/menu/forza">
         Forza Karting
       </NavLink>
     </nav>

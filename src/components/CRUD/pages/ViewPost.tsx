@@ -22,7 +22,7 @@ export const ViewPost: React.FC = () => {
     })
       .then((response) => {
         if (response.ok) {
-          navigate("/crud/posts/");
+          navigate("/ra-16-react-router/crud/posts/");
         } else {
           throw new Error("Error updating post");
         }
@@ -33,13 +33,13 @@ export const ViewPost: React.FC = () => {
   };
 
   const handleEdit = () => {
-    navigate(`/crud/posts/${id}/edit`, {
+    navigate(`/ra-16-react-router/crud/posts/${id}/edit`, {
       state: { post, created: post.created },
     });
   };
 
   const handleCancel = () => {
-    navigate(`/crud/posts/`, { state: { post, created: post.created, } });
+    navigate(`/ra-16-react-router/crud/posts/`, { state: { post, created: post.created, } });
   };
 
   if (!post) {

@@ -8,7 +8,7 @@ export const NotFound = () => {
       <span className="main__notfound-num">404</span>The page was not found
       <AuthContext.Consumer>
         {({ token }) => (
-          <Link className="main__neto-notfound-btn" to={token ? "/auth/neto/news/" : "/auth/neto/"}>
+          <Link className="main__neto-notfound-btn" to={token ? "/ra-16-react-router/auth/neto/news/" : "/ra-16-react-router/auth/neto/"}>
             Go back
           </Link>
         )}

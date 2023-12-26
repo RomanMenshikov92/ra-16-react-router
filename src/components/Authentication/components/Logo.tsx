@@ -7,7 +7,7 @@ export const Logo: React.FC<LogoProps> = ({ name }: LogoProps) => {
   const { logout } = useContext(AuthContext);
   return (
     <>
-      <Link to="/auth/neto/" onClick={logout} className="header__neto-logo">
+      <Link to="/ra-16-react-router/auth/neto/" onClick={logout} className="header__neto-logo">
         {name}
       </Link>
     </>

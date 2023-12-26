@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { AuthContext } from "../contexts/AuthContent";
 import { News } from "../interfaces/InterfaceNews";
+import { NotFoundPage } from "../pages/NotFoundPage";
 
 export const SingleNews = () => {
   const { id } = useParams<{ id: string }>();
@@ -29,7 +30,11 @@ export const SingleNews = () => {
     fetchNews();
   }, [id, token]);
 
-  const handleGoBack = () => navigate(`/auth/neto/news/`, { replace: true, state: `/auth/neto/news/${id}` });
+  const handleGoBack = () => navigate(`/ra-16-react-router/auth/neto/news/`, { replace: true, state: `/ra-16-react-router/auth/neto/news/${id}` });
+
+  if (!post) {
+    return <NotFoundPage />;
+  }
 
   return (
     <div>

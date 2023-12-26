@@ -43,7 +43,7 @@ export const CreatePost: React.FC = () => {
       body: JSON.stringify({ id: 0, content, date, author, position, avatar, like }),
     })
       .then(() => {
-        navigate("/crud/posts/");
+        navigate("/ra-16-react-router/crud/posts/");
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -51,7 +51,7 @@ export const CreatePost: React.FC = () => {
   };
 
   const handleCancel = () => {
-    navigate("/crud/posts/");
+    navigate("/ra-16-react-router/crud/posts/");
   };
 
   const handleTabChange = (tab: string) => {
